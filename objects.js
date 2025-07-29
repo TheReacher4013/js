@@ -162,17 +162,17 @@ console.log(Object.isFrozen(user)); // true
 // 🛡️ 2. Object.seal(obj)
 
 // Prevents:
-// Adding new properties ❌
-// Removing properties ❌
+// Adding new properties 
+// Removing properties 
 // Allows:
-// Updating existing values ✅
+// Updating existing values 
 
 let car2 = { brand: "Honda" };
 Object.seal(car2);
 
-car2.brand = "Toyota";  // ✅ allowed
-car2.model = "Civic";   // ❌ won't be added
-delete car2.brand;      // ❌ won't delete
+car2.brand = "Toyota";  // 
+car2.model = "Civic";   // 
+delete car2.brand;      //
 
 console.log(car2);                 // { brand: "Toyota" }
 console.log(Object.isSealed(car2)); // true
